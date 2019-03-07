@@ -22,6 +22,11 @@ stage('Deploy (Docker run the image)')
 {
 sh "docker run -d -p 8080:80/tcp valexam:latest"
 }
+  
+stage('Apply changes to the environment')
+{
+sh "ls -l"
+}
 
 
 }
