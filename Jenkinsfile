@@ -25,7 +25,7 @@ sh "docker push vkageha/valexam:version1"
 
 stage('Deploy (Docker run the image)')
 {
-sh "docker run -d -p 6612:81/tcp valexam:latest"
+sh "docker run -d -p 6612:90/tcp valexam:latest"
 }
   
 stage('Apply changes to the environment')
